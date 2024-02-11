@@ -6,15 +6,10 @@
 //
 
 import Foundation
-protocol YemekDetayProtocolFirst{
+
+protocol DetaySayfaDelegate: AnyObject {
+    func sepeteEklendi(sepet_yemek_id:String,yemek_adi:String,yemek_resim_adi:String,yemek_fiyat: String,yemek_siparis_adet:String,kullanici_adi : String)
+      
     
-    var foodDetail : YemekDetayProtocolSecond? {get set}
-    
-    func sepeteHepsiniEkle(yemek_adi : String, yemek_fiyat : String, yemek_resim_adi : String, yemek_siparis_adet:String, kullanici_adi:String)
-}
-protocol YemekDetayProtocolSecond {
-    func sepeteEkle(yemek_adi : String, yemek_fiyat : String, yemek_resim_adi : String, yemek_siparis_adet:String, kullanici_adi:String)
-}
-protocol YemekDetayProtocolThird {
-    static func modulYaratma(ref:DetaySayfa)
+  
 }

@@ -30,6 +30,8 @@ class DetaySayfa: UIViewController {
     
     var count : Int = 1
     var yemek: Yemekler?
+    var sepet : YemekDetay?
+    weak var delegate :DetaySayfaDelegate?
 
     
     override func viewDidLoad() {
